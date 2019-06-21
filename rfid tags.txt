@@ -1,0 +1,13 @@
+Card UID: CB 7D 32 09
+21:09:50.711 -> Card SAK: 08
+21:09:50.745 -> PICC type: MIFARE 1KB
+In dec:  203 125 50 09
+
+
+
+
+karta
+Card UID: 67 C7 D2 34
+21:10:43.885 -> Card SAK: 08
+21:10:43.918 -> PICC type: MIFARE 1KB
+.604 -> In dec:  103 199 210 52

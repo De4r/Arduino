@@ -1,0 +1,6 @@
+{
+    "sketch": "DHTxx_LCD_Stacja_pogodowa_ikony.ino",
+    "board": "arduino:avr:uno",
+    "programmer": "AVRISP mkII",
+    "port": "COM3"
+}
