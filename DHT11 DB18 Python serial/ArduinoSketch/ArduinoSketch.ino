@@ -20,7 +20,7 @@ LiquidCrystal_I2C lcd(0x27, 20, 4);
 float humidDHT, pressureBMP, altitudeBMP;
 float tempDHT, tempBMP, tempLM;
 unsigned long currentMillis = 0, previousMillis = 0;
-const long interval = 1000*60*15-;
+const long interval = 1000*60*15;
 volatile boolean serialState = true, changes = false;
 volatile byte lcdMode=1; // 1 podswietlenie caly czas, 2 podswietlenie przy pomiarze, 3 bez podstwielenia, 4 brak LCD, 5->1
 
@@ -178,7 +178,7 @@ void lcdDisplay(){
     case 2:
       lcd.backlight();
       lcdContent();
-      delay(2000);
+      delay(7000);
       lcd.noBacklight();
       break;
       
@@ -209,8 +209,6 @@ void lcdContent(){
   lcd.createChar(2, deegreSignMy);
   lcd.createChar(3, pressure);
 
-
-  lcd.clear();
   lcd.setCursor(0,0);
   lcd.print(" ");
   lcd.write(byte(0));
@@ -239,9 +237,9 @@ void lcdContent(){
   lcd.setCursor(0,3);
   lcd.print(tempLM);
 
-  lcd.setCursor(11, 3);
+  lcd.setCursor(9, 3);
   lcd.print("S: ");
   lcd.print(serialState);
-  lcd.print(" M: ");
+  lcd.print("  M: ");
   lcd.print(lcdMode);
 }
