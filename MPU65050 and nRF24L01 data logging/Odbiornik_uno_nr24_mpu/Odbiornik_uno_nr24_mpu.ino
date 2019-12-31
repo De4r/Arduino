@@ -1,4 +1,4 @@
-// Recieverr Code
+// Reciever Code
 /*
  * PINs and connections
  * nRF2401L module with UNO

@@ -7,7 +7,8 @@ register_matplotlib_converters()
 
 
 sensor = "DH11_BMP_LM"
-path = f"{datetime.date.today()}_LOG_{sensor}.csv"
+#path = f"{datetime.date.today()}_LOG_{sensor}.csv"
+path="2019-11-25_LOG_DH11_BMP_LM.csv"
 fieldsNames = ['Date', 'Temperature BMP', 'pressureBMP', 'altitudeBMP', 'Temperature DHT', 'Humidity DHT', 'Temperature LM']
 
 df = pandas.read_csv(path)

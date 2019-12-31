@@ -4,7 +4,7 @@
 #include <DS18B20.h>
 
 // Numer pinu do którego podłaczasz czujnik
-#define ONEWIRE_PIN 13
+#define ONEWIRE_PIN 10
 
 // Ilość czujników
 #define SENSORS_NUM 5
