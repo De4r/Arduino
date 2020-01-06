@@ -1,0 +1,32 @@
+Ponizej testy poziomu naswietlenia:
+Test trybu jeden pomiar najwyzszej precyzji a potem uspienie czujnika
+filename = 'LOGS_BH1750_OH2mode.csv'
+Test trybu jeden pomiar wyosokiej prezycji a potem uspienie
+filename = 'LOGS_BH1750_OHmode.csv'
+Test trybu ciąglych pomiarow czujnika wysokiej prezycji w trybie usredniania - robi pomiar i usrednia z 3 ostatnie pomiary
+filename = 'LOGS_BH1750_CHNmode.csv'
+Test trybu ciąglych pomiarow czujnika wysokiej prezycji
+filename = 'LOGS_BH1750_CHmode.csv'
+Test trybu ciąglych pomiarow czujnika wysokiej prezycji w trybie Burst - pomiar 3 razy i usrednienie
+filename = 'LOGS_BH1750_CHBmode.csv'
+
+
+Test temperatury i cisnienia w tym samym miejscu
+Dwa testowe pomiary:
+filename = 'Test1.csv'
+filename = 'Test2.csv'
+
+Pomiar w tym samym miejscu, dodatkowo czujniki DHT11 i LM35, w trakcie testu odczytana została temperatura na termometrze rteciowym
+odczyt o godz 17:25, 17:30, 17:40 - praktycznie stała temperatura około 20.2 stopnia
+17:50 - 21 stopni?(chyba nagrzalem reka) 18:05 - 20.2 stopnia 18:30 - 20 stopni
+filename = '16-52_LOGS_ISP_temp_test.csv'
+
+Wynika z tego ze LM35 cos jest zlr
+DH11 ma blad staly 1,3stopnia
+BMP280 maja:
+                 17:40  17:30   17:20   18:05   18:30   srednia
+0 - z zestawu 3: 1.05   1.02    0.975   1.10    1.00    1.03
+1 - z zestawu 1: 1.70   1.725   1.75    1.725   1.675   1.715
+2 - z zestawu 2: 1.325  1.30    1.35    1.35    1.30    1.325
+
+Cisnienie 1 - zestaw 1  + 1.1hPa
